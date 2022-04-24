@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Merriweather+Sans:wght@700&display=swap');
+/*https://coolors.co/2b2d42-8d99ae-edf2f4-f3ca40-d90429*/
+
+body {
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+main, article {
+    border-left: 2px solid #bcbcbc;
+    border-right: 2px solid #bcbcbc;
+    padding: 10px;
+}
+
+.selfie {
+    display: block;
+    padding: 20px;
+}
+
+header {
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+}
+
+header, footer {
+    background-color: #0b5394;
+    color: #bcbcbc;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin: auto, auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #2B2D42;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+footer p{
+    margin: auto;
+    text-align: center;
+}
+
+#updated {
+    color: #c90076;
+}
+
+footer a {
+    color: #bcbcbc;
+}
+
+article {
+    border-top: 2px solid #bcbcbc;
+    border-bottom: 2px solid #bcbcbc;
+    margin: 10px;
+}
+
+article img, article a, article p {
+    padding: 10px;
+}
+
+article p {
+    font-size: 0.8em;
+    text-align: justify;
+}
