@@ -1,69 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+
+<html lang="en-us">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Assignment portal for Canyon Atwood in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
-    />
-    <meta name="author" content="Canyon Atwood" />
-    <title>Color Scheme</title>
-
-    <!-- links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Outfit:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link type="text/css" rel="stylesheet" href="CSS/small.css" />
-    <link type="text/css" rel="stylesheet" href="CSS/medium.css" />
-    <link type="text/css" rel="stylesheet" href="CSS/large.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-
-    <!-- Scripts -->
-    <script defer src="js/dates.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>West Texas Weather</title>
+    <meta name="author" content="Canyon Atwood">
+    <meta name="description" content="Website plan for the weather site - https://graphical.weather.gov/sectors/westtexas.php">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header>
-      <div class="weather_top">
-        <h1>
-          Weather Project<br /><span class="byline">Planning Document</span>
-        </h1>
-      </div>
-
-      <div id="header_links">
-        <div id="nav">
-          <nav>
-            <button id="hamburgerbtn">
-              <span>&#9776;</span><span>X</span>
-            </button>
-            <ul id="primarynav">
-              <li><a href="index.html">Main</a></li>
-              <li><a href="target_audience.html">Target Audience</a></li>
-              <li><a href="color_scheme.html">Color Scheme</a></li>
-              <li><a href="typography.html">Typography</a></li>
+      <h1 id="title">West Texas - Weather Projectl</h1>
+      <h2>Site Plan for https://graphical.weather.gov/sectors/westtexas.php</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="target-audience.html">Audience</a></li>
+                <li><a class="active" href="color_scheme.html">Colors</a></li>
+                <li><a href="typography.html">Typography</a></li>
             </ul>
-          </nav>
-        </div>
-        <br />
-      </div>
-    </header>
-    <main>
-      <h1>Color Palette</h1>
-      <p>The color scheme will be based upone the below gradient color chart.</p>
-      <img id="color_scheme" src="images/color_scheme.webp" alt="Color Scheme" />
-    </main>
+        </nav>
+      </header>
+      <main>
+        <h2><a href="https://coolors.co/3066be-fcf7f8-ced3dc-aba9c3-ec4e20">Colors</a></h2>
 
-    <footer>
-      <p>
-        &copy;<span id="year"></span> .:|:. <a href ="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland .:|:.
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-      </p>
-      <p id="lastmod">Last modified</p>
-    </footer>
+        <div class="color primary">Background color for The header and Footer: #3066BE</div>
+        <div class="color background">Background color for the main site content: #FCF7F8</div>
+        <div class="color headings">Heading color to call attention: #EC4E20</div>
+        <div class="color accent-1">Accent color 1 - hover events, highlighting: #CED3DC</div>
+        <div class="color accent-2">Accent color 2 - call to action, emphasis: #ABA9C3</div>
+
+      </main>
+      <footer>
+
+      </footer>
   </body>
-</html>
