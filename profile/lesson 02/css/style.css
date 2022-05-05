@@ -33,14 +33,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #CED3DC;
+    background-color: #0b5394;
 }
 
 main {
     width: 800px;
     margin: -17px auto;
     padding: 10px;
-    background-color: #ccc;
+    background-color: #0b5394;
 }
 
 .color {
@@ -59,7 +59,7 @@ main {
 }
 
 .headings {
-    background-color: #EC4E20;
+    background-color: #FFFF;
 }
 
 .accent-1 {
@@ -67,7 +67,7 @@ main {
 }
 
 .accent-2 {
-    background-color: #ABA9C3;
+    background-color: #000000;
 }
 
 h1, h2, h3, h4 {
