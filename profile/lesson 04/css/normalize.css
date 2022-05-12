@@ -11,8 +11,8 @@ sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,sele
 header{
     background-color: #0b5394;
     padding: 20px;
-    border-radius: 10px;
+    
     color: white;
-    border: black solid 3px;
+    
     text-align: center;
 }  
