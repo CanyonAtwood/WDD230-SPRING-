@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 Canyon Atwood BYU-Idaho</title>
+    <meta name="description" content="Weather Site page for Canyon Atwood at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+
+</head>
+<body>
+  <div class="announcement">
+      <h2>Pickup Basketball every Saturday 9 am bring Mountain Dew<span class="close">&times;</span></h2>
+  </div>
+
+<div class="grid">
+  <header>
+      <img id="logo" src="..\lesson 08\images\weather image.png" alt="weather_icon">
+      <h1>Preston Weather</h1>
+  </header>
+  <nav>
+  <ul  class="menu">
+    <li><a class="ham" href="#">☰ Menu</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="profile\lesson 03\preston.html">Preston</a></li>
+    <li><a href="#">Soda Springs</a></li>
+    <li><a href="#">Fish Haven</a></li>
+    <li><a href="#" class="active">Storm Center</a></li>
+    <li><a href="/lesson7/">Gallery</a></li>
+  </ul>
+</nav>
+
+<main>
+<form id="weatherForm" method="get" action="thanks.html">
+  <div class="tab">
+    <h2 class="title">Contact Information</h2>
+    <h3 class="subtitle">Who are you and how may we contact you?</h3>
+  <!-- One "tab" for each step in the form: -->
+    <p>
+    <input type="text" class="required" name="firstname" id="fname" placeholder="First Name" pattern="[A-Za-z-\.\s]{3,}">
+    </p>
+    <p>
+    <input type="text" class="required" name="lastname" id="lname" placeholder="Last Name" pattern="[A-Za-z-\.\s]{3,}">
+    </p>
+    <p>
+    <input type="text" name="email" id="email" placeholder="whateveryouremailis@gmail.com">
+    </p>
+    <p>
+    <input type="tel" class="required" name="phone" placeholder="Phone Number">
+    </p>
+    <p>
+    <input type="number" class="required" name="zip"  placeholder="Zip">
+    </p>
+  </div>
+  <div class="tab">
+<h2 class="title">Storm Information</h2>
+      <h3 class="subtitle">About the storm</h3>
+      <label>Storm Date:
+      <input type="date" name="theDate"/>
+        </label>
+        <br><br>
+      <label>Storm Type:
+      <input name="storms" list="stormlist">
+      <datalist id="stormlist">
+      <option value="Flash Flood">
+      <option value="Hail">
+      <option value="Hurricane">
+      <option value="Thunderstorm">
+      <option value="Tornado">
+      </option>
+      </datalist>
+        </label>
+        <br><br>
+      <label class="storm">Storm Severity: <span id="rating-value">5</span>
+      <input type="range" name="storm-severity" min="1" max="10" step="1" value="5" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"/>
+     </label>
+  <label>
+      <select name="stormRegion" id="selectstorm" onchange="selectResponse()">
+      <option value="" disabled selected>Storm Region...</option>
+      <option value="Preston">Preston</option>
+      <option value="Soda Springs">Soda Springs</option>
+      <option value="Fish Haven">Fish Haven</option>
+      </select>
+      </label>
+      <br><br>
+      User In Danger Level <br>
+      <em>(Choose one)</em>
+      <br><br>
+      <div class="selection"><br>
+      <input type="radio" id="answer1" name="time" value="Yes" ><label for="answer1"> Yes</label>
+      <input type="radio" id="answer3" name="time" value="No" checked><label for="answer3">No</label>
+      <input type="radio" id="answer2" name="time" value="Maybe"><label for="answer2"> Maybe</label>  
+      </div>
+      <br><br>
+  </div>
+  <div class="tab">
+  <h2 class="title">Additional Information</h2>
+      <h3 class="subtitle">What else should we know?</h3>
+     <label class="top">Comments: </label><br><br>
+                  <textarea name="comments" id="comments">
+                  </textarea>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+</main>
+<footer>
+    <div>
+    &copy; <span id="currentYear"></span> | Canyon Atwood Midland, Texas | <a href="http://www.byui.edu">BYU-Idaho </a>
+ </div>
+ Last Updated: 
+ <span id="lastUpdate"></span>
+</footer>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/stormcenter.js"></script>
+<script src="js/web/js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+        'whazzap', 'Short shot'
+    ]
+  }
+});
+</script>
+</body>
+</html>
