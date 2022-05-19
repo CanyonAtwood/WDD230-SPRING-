@@ -51,4 +51,9 @@
     section > div {
       padding: 0;
     }
+    img {
+        float: left; 
+        margin: 5px;
+    }
+
   }

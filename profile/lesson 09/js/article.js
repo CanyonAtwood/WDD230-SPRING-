@@ -1,4 +1,4 @@
-fetch('get api')
+fetch('http://openfisheries.org/api/landings/species.json')
 .then((response) => response.json())
 .then((jsObject) => {
     console.log(jsObject);
