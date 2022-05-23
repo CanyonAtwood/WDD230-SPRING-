@@ -115,7 +115,7 @@ body {
     align-items: center;
     justify-content: center;
     width: -webkit-fill-available;
-    border: 5px solid #0b5394;
+    border: 5px solid #65498c;
     border-radius: 10px;
     padding: 0.5rem;
   }
@@ -139,7 +139,7 @@ body {
     padding: 0.75rem;
   }
   button {
-    background-color: #0b5394;
+    background-color: #f2bc1b;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -165,7 +165,7 @@ body {
   }
   .contact {
     grid-area: contact;
-    background-color: #0b5394;
+    background-color: #27b9f2;
     margin-top: 2em;
     padding: 1em;
     border-radius: 5px;
@@ -208,7 +208,7 @@ body {
   footer {
     margin-top: 1em;
     grid-column: footer;
-    background-color: #0b5394;
+    background-color: #f2bc1b;
     min-height: 50px;
   }
   footer > * {
